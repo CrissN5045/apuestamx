@@ -1,0 +1,66 @@
+{
+		"topNav":[
+			{
+				"text":"INICIO",
+				"url":"lineas de apuesta"
+			},
+			{
+				"text":"DEPORTES",
+				"url":"casino.html"
+			},
+			{
+				"text":"CARRERAS",
+				"url":"caballos"
+			},
+			{
+				"text":"E-SPORTS",
+				"url":"banca.html"
+			},
+			{
+				"text":"SLOTS",
+				"url":"contact.html"
+			}
+	    ],
+		"products_line1":[
+			{
+				"img": "assets/img/futbol-caja-soccer-texto-310x270.png",
+				"alt": "futbol-caja-soccer"
+			},
+			{
+				"img": "assets/img/futbol-caja-nfl-texto-310x270.png",
+				"alt": "futbol-caja-nfl"
+			},
+			{
+				"img": "assets/img/futbol-caja-baseball-texto-310x270.png",
+				"alt": "futbol-caja-baseball"
+			},
+			{
+				"img": "assets/img/futbol-caja-basketball-texto-310x270.png",
+				"alt": "futbol-caja-basketball"
+			}
+		],
+		"products_line2":[
+			{
+				"img": "assets/img/caja-boxing-texto-420x300.png",
+				"alt": "caja-boxing"
+			},
+			{
+				"img": "assets/img/caja-mma-texto-420x300.png",
+				"alt": "caja-mma-texto"
+			},
+			{
+				"img": "assets/img/caja-tennis-texto-420x300.png",
+				"alt": "caja-tennis"
+			}
+		],
+		"products_line4":[
+			{
+				"img": "assets/img/caja-esports-texto-310x260.png",
+				"alt": "caja-esports"
+			},
+			{
+				"img": "assets/img/caja-slots-texto-310x260.png",
+				"alt": "caja-slots"
+			}
+		]
+}

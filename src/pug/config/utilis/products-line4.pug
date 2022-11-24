@@ -1,0 +1,13 @@
+mixin pushImg(alt, img,i)
+	-if(i==0)
+		div(class="container-cardProducts s-x-0 s-cols-1 m-x-2 m-cols-1")
+			img(src=img, alt=alt)
+			button APOSTAR
+	-else
+		div(class="container-cardProducts s-x-0 s-cols-1")
+			img(src=img, alt=alt)
+			button APOSTAR
+
+-for(var i =0; i< products_line4.length; i++)
+	-var productsline4 = products_line4[i];
+	+pushImg(productsline4.alt, productsline4.img,i)

@@ -1,0 +1,43 @@
+div(class="container-LoginRegister ed-grid")
+	setion(class="container-top")
+		div(class="m-cols-2 ed-container")
+			img(style="max-width: 325px;" src="assets/img/logo-apuestamex.png", alt="logo-apuestamex")
+		div(class="ed-container container-LR")
+			button(class="select-LR select-l" id="btnLogin") Iniciar Sesion
+			button(class="select-LR select-r" id="btnRegister") Registro
+div(class="container-formulario ed-grid")
+	setion(class="container-top")
+		form(class="form-login" action="")
+			div(class="ed-container form-grop-login")
+				div
+					p Usuario
+					input(type="text" placeholder="Escribe tu usuario")
+				div
+					p Contraseña
+					input(type="text" placeholder="*** *** ***")
+				div
+					button(class="btn-summitLogin" type="submit") Ingresar
+		form(class="form-register" action="") 
+			div(class="ed-container form-grop-register")
+				div(class="col-1")
+					div
+						p Nombre
+						input(type="text" placeholder="Nombre")
+					div
+						p Telefono
+						input(type="text" placeholder="55 555 555")
+					div
+						p Contraseña
+						input(type="password" placeholder="*** *** ***")
+					div
+				div(class="col-2")
+					div
+						p Usuario
+						input(type="text" placeholder="Elige tu nickname")
+					div
+						p Correo
+						input(type="email" placeholder="example@gmail.com")
+					div
+						p Confirmar Contraseña
+						input(type="password" placeholder="*** *** ***")
+			button(class="btn-summitRegister" type="submit") Registrate

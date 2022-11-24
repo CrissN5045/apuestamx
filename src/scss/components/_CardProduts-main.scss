@@ -1,0 +1,86 @@
+.container-cont-Prodcuts{
+
+	.container-cardProducts{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		padding: 0.5rem;
+		border-radius: 15px;
+		.card-team{
+			position: relative;	
+			.text-cardTeam{
+				color: var(--color-blanco-V95);
+				
+				z-index: 1;
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+
+	button{
+			font-size: 13px;
+			color: var(--color-blanco-V95);
+			background: var(--color-Naranja-01);
+			padding: 12px 70px;
+			border-width: 0px;
+			border-radius: 10px;
+			cursor: pointer;
+			z-index: 1;
+			position: absolute;
+			bottom: -25px;
+			cursor: pointer;
+			margin-bottom: 3rem;
+		&:hover{
+			color: var(--color-Azul01);
+			background-color: var(--color-Amarillo-01);
+		}
+
+		@include from(s){
+			padding: 13px 30px;
+			left: 37.33%;
+		}
+		@include from(m){
+			padding: 10px 25px;
+			left: 20.33%;
+		}
+		@include from(mx){
+			padding: 10px 40px;
+			left: 20.33%;
+		}
+		
+		@include from(l){
+			padding: 12px 50px;
+			left: 20.33%;
+		}
+		
+	}
+
+	img{
+		border-radius: 0px 0px 10px 10px;
+		box-shadow: 6px 14px 20px -5px #000;
+	}
+
+
+	.btn-hackCaballos{
+		@include from(s){
+			padding: 13px 30px;
+			left: 37.33%;
+		}
+		@include from(m){
+			padding: 8px 25px;
+			left: 35.33%;
+		}
+		@include from(mx){
+			padding: 10px 40px;
+			left: 35.33%;
+		}
+		
+		@include from(l){
+			padding: 12px 50px;
+			left: 36.33%;
+		}
+	}
+}

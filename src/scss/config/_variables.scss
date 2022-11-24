@@ -1,0 +1,25 @@
+//layout
+:root {
+  --header-height 		: 3rem;
+  @include from(l) {
+    --header-height 	: 4rem;
+  }
+	//native color vars
+	--color-first      	: #007BDF;
+	--color-sky			: #416fcf;
+	--color-skyLow		: #233c74;
+	--color-grayLow		: #858585;
+	--color-third      	: #FF3C32;
+	--color-background  : white;
+	--color-Azul01		: #0B1C47;
+	--color-blanco-V95	: #F1F1F1;
+	--color-Amarillo-01	: #CCFF11;
+	--color-Celeste-01  : #3591FF;
+	--color-Celeste-02  : #80BAFF;
+	--color-Naranja-01	: #FA4932;
+	--color-Naranja-02	: #FA4932;
+	--color-Verde-01	: #1EA010;
+	--color-Verde-02	: #58A050;
+}
+// Sass Color Vars
+$color-first 			: var(--color-first			);

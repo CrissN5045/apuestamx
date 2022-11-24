@@ -1,0 +1,22 @@
+nav(class='top-nav')
+	div(class='top-nav__container')
+		a(href='index.html', class='top-nav__link')
+			img(src='assets/img/logo-apuestamex.png', alt='', class='top-nav__logo')
+		ul(class='top-nav__menu')
+			include ../config/utilis/top-menu
+		div()
+			div(class="btn-ml")
+				button(class="btn-top-nav"): a(href="login.html") Login 
+					i(class="fa fa-user")
+					
+				button(class="modal-button btn-top-nav btn-dark"): a(href="register.html") Register
+		button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
+			span.hamburger-box
+				span.hamburger-inner
+
+
+div(class="btn-m-nav btn-ml")
+	button(class="modal-button-m btn-top-nav"): a(href="login.html") Login  
+		i(class="fa fa-user")
+	button(class="btn-top-nav btn-dark"): a(href="register.html") Register
+	

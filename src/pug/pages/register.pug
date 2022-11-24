@@ -1,0 +1,12 @@
+extends ../config/template
+append config
+	-currentPage		= "Register|Login"
+	-siteName			= 'Apuesta MX'
+	-content			= 'login'
+	-pageDescription	= 'Pagina de apuestas en mexico e internacional'
+block main-header
+block main-container
+	include ../includes/main-login-register
+block main-footer
+	include ../includes/footer
+block scripts

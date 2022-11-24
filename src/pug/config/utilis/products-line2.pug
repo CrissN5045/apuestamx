@@ -1,0 +1,8 @@
+mixin pushImg(alt, img)
+	div(class="container-cardProducts")
+		img(src=img , alt=alt)
+		button APOSTAR
+
+-for(var i =0; i< products_line2.length; i++)
+	-var productsline2 = products_line2[i];
+	+pushImg(productsline2.alt, productsline2.img)
