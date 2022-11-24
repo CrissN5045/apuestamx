@@ -5,7 +5,6 @@
 		text-align: center;
 		width: 100%;
 		margin-top: 5rem;
-		padding: 0.5rem;
 		border-radius: 15px;
 		background-color: var(--color-blanco-V95);	
 		.card-team{
@@ -65,7 +64,18 @@
 			margin-top: 0.5rem;
 		}
 		img{
-			margin-bottom: 1rem;
+			@include from(s){
+				height: 135px;
+				
+			}
+			@include from(m){
+				height: 130px;
+				
+			}
+			@include from(l){
+				height: 170px;
+				
+			}
 		}
 		button{
 			font-size: 16px;

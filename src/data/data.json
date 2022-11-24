@@ -2,25 +2,39 @@
 		"topNav":[
 			{
 				"text":"INICIO",
-				"url":"lineas de apuesta"
+				"url":"index.html"
 			},
 			{
 				"text":"DEPORTES",
-				"url":"casino.html"
+				"url":"deportes.html"
 			},
 			{
 				"text":"CARRERAS",
-				"url":"caballos"
-			},
-			{
-				"text":"E-SPORTS",
-				"url":"banca.html"
+				"url":"carrera.html"
 			},
 			{
 				"text":"SLOTS",
-				"url":"contact.html"
+				"url":"slots.html"
 			}
 	    ],
+		"partido_home":[
+			{
+				"img": "assets/img/partidos/nov-25-gales-vs-iran-fifa.png",
+				"alt": "futbol-caja-soccer"
+			},
+			{
+				"img": "assets/img/partidos/nov-25-holanda-vs-ecuador-fifa.png",
+				"alt": "futbol-caja-soccer"
+			},
+			{
+				"img": "assets/img/partidos/nov-25-inglaterra-vs-usa-fifa.png",
+				"alt": "futbol-caja-soccer"
+			},
+			{
+				"img": "assets/img/partidos/nov-25-qatar-vs-senegal-fifa.png",
+				"alt": "futbol-caja-soccer"
+			}
+		],
 		"products_line1":[
 			{
 				"img": "assets/img/futbol-caja-soccer-texto-310x270.png",
@@ -62,5 +76,137 @@
 				"img": "assets/img/caja-slots-texto-310x260.png",
 				"alt": "caja-slots"
 			}
+		],
+
+		"img_casino":[
+			{
+				"img": "assets/img/casino/FruitZen.jpg",
+				"alt": "FruitZen"
+			},
+			{
+				"img": "assets/img/casino/AmericanBlackjack.jpg",
+				"alt": "AmericanBlackjack"
+			},
+			{
+				"img": "assets/img/casino/JumboJoker.jpg",
+				"alt": "JumboJoker"
+			},
+			{
+				"img": "assets/img/casino/EuropeanRoulette.jpg",
+				"alt": "EuropeanRoulette"
+			},
+			{
+				"img": "assets/img/casino/SugarPop2.jpg",
+				"alt": "SugarPop2"
+			},
+			{
+				"img": "assets/img/casino/BloodEternal.jpg",
+				"alt": "BloodEternal"
+			},
+			{
+				"img": "assets/img/casino/Lucky7.jpg",
+				"alt": "Lucky7"
+			},
+			{
+				"img": "assets/img/casino/CaribbeanPoker.jpg",
+				"alt": "CaribbeanPoker"
+			},
+			{
+				"img": "assets/img/casino/DeucesWild.jpg",
+				"alt": "DeucesWild"
+			},
+			{
+				"img": "assets/img/casino/FireandSteel.jpg",
+				"alt": "FireandSteel"
+			},
+			{
+				"img": "assets/img/casino/AmericanBJ.jpg",
+				"alt": "AmericanBJ"
+			},
+			{
+				"img": "assets/img/casino/ArabianWishes.jpg",
+				"alt": "ArabianWishes"
+			},
+			{
+				"img": "assets/img/casino/FreakyF.jpg",
+				"alt": "FreakyF"
+			},
+			{
+				"img": "assets/img/casino/12Animals.jpg",
+				"alt": "12Animals"
+			},
+			{
+				"img": "assets/img/casino/CaribbeanPokerB.jpg",
+				"alt": "CaribbeanPokerB"
+			},
+			{
+				"img": "assets/img/casino/KittyCutie.jpg",
+				"alt": "KittyCutie"
+			},
+			{
+				"img": "assets/img/casino/SistersLuck.jpg",
+				"alt": "SistersLuck"
+			},
+			{
+				"img": "assets/img/casino/SingleDeckBJ.jpg",
+				"alt": "SingleDeckBJ"
+			},
+			{
+				"img": "assets/img/casino/HyperGalactic.jpg",
+				"alt": "HyperGalactic"
+			},
+			{
+				"img": "assets/img/casino/PartyGuy.jpg",
+				"alt": "PartyGuy"
+			},
+			{
+				"img": "assets/img/casino/MammaMia.jpg",
+				"alt": "MammaMia"
+			},
+			{
+				"img": "assets/img/casino/TreasureRoom.jpg",
+				"alt": "TreasureRoom"
+			},
+			{
+				"img": "assets/img/casino/AtTheMovies.jpg",
+				"alt": "AtTheMovies"
+			},
+			{
+				"img": "assets/img/casino/MegaGlam.jpg",
+				"alt": "MegaGlam"
+			},
+			{
+				"img": "assets/img/casino/Sin-City-Nights.jpg",
+				"alt": "SinCityNights"
+			},
+			{
+				"img": "assets/img/casino/FaFaTwins.jpg",
+				"alt": "FaFaTwins"
+			},
+			{
+				"img": "assets/img/casino/FrankenslotsMonster.jpg",
+				"alt": "FrankenslotsMonster"
+			},
+			{
+				"img": "assets/img/casino/Pinocchio.jpg",
+				"alt": "Pinocchio"
+			},
+			{
+				"img": "assets/img/casino/Tycoons.jpg",
+				"alt": "Tycoons"
+			},
+			{
+				"img": "assets/img/casino/EventHorizon.jpg",
+				"alt": "EventHorizon"
+			},
+			{
+				"img": "assets/img/casino/WeekendInVegas.jpg",
+				"alt": "WeekendInVegas"
+			},
+			{
+				"img": "assets/img/casino/TigersClaw.jpg",
+				"alt": "TigersClaw"
+			}
+
 		]
 }

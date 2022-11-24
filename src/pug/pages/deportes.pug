@@ -1,0 +1,12 @@
+extends ../config/template
+append config
+	-currentPage		= "Deportes"
+	-siteName			= 'Apuesta MX'
+	-content			= 'content'
+	-pageDescription	= 'Pagina de apuestas en mexico e internacional'
+block main-header
+block main-container
+	include ../includes/iframe-deportes
+block main-footer
+	include ../includes/footer
+block scripts

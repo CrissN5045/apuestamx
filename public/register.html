@@ -52,11 +52,10 @@
       <nav class="top-nav">
         <div class="top-nav__container"><a class="top-nav__link" href="index.html"><img class="top-nav__logo" src="assets/img/logo-apuestamex.png" alt=""></a>
           <ul class="top-nav__menu">
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="lineas de apuesta">INICIO</a></li>
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="casino.html">DEPORTES</a></li>
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="caballos">CARRERAS</a></li>
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="banca.html">E-SPORTS</a></li>
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="contact.html">SLOTS</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="index.html">INICIO</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="deportes.html">DEPORTES</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="carrera.html">CARRERAS</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="slots.html">SLOTS</a></li>
           </ul>
           <div>
             <div class="btn-ml">
@@ -86,55 +85,26 @@
       </div>
       <div class="container-formulario ed-grid">
         <setion class="container-top">
-          <form class="form-login" action="">
+          <form class="form-login" name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false">
             <div class="ed-container form-grop-login">
-              <div>
-                <p>Usuario</p>
-                <input type="text" placeholder="Escribe tu usuario">
+              <div class="separador">
+                <label for="username">Usuario</label><br>
+                <input type="text" name="username" required placeholder="Escribe tu usuario">
               </div>
-              <div>
-                <p>Contraseña</p>
-                <input type="text" placeholder="*** *** ***">
+              <div class="separador">
+                <label for="password">Contraseña</label><br>
+                <input type="password" name="password" required placeholder="*** *** ***">
               </div>
+              <div class="text-center mt-2"><small class="text-danger" name="msj_error_lg"></small></div>
               <div>
-                <button class="btn-summitLogin" type="submit">Ingresar</button>
+                <button class="btn-summitLogin" type="submit" name="btn-login"><span name="msj_loading" id="id-login-loading"></span><span name="msj_login">Ingresar</span></button>
               </div>
             </div>
-          </form>
-          <form class="form-register" action=""> 
-            <div class="ed-container form-grop-register">
-              <div class="col-1">
-                <div>
-                  <p>Nombre</p>
-                  <input type="text" placeholder="Nombre">
-                </div>
-                <div>
-                  <p>Telefono</p>
-                  <input type="text" placeholder="55 555 555">
-                </div>
-                <div>
-                  <p>Contraseña</p>
-                  <input type="password" placeholder="*** *** ***">
-                </div>
-                <div></div>
-              </div>
-              <div class="col-2">
-                <div>
-                  <p>Usuario</p>
-                  <input type="text" placeholder="Elige tu nickname">
-                </div>
-                <div>
-                  <p>Correo</p>
-                  <input type="email" placeholder="example@gmail.com">
-                </div>
-                <div>
-                  <p>Confirmar Contraseña</p>
-                  <input type="password" placeholder="*** *** ***">
-                </div>
-              </div>
-            </div>
-            <button class="btn-summitRegister" type="submit">Registrate</button>
-          </form>
+            <input type="hidden" name="BackEndUrl" value="https://apuestas.sport507.com.pa">
+          </form><script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
+          <div class="ed-container form-register">
+            <iframe style="width: 100%; height: 70vh;" src="https://apuestas.apuestamx.com/sign-up" frameborder="0"> </iframe>
+          </div>
         </setion>
       </div>
     </main>

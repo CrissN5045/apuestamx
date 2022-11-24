@@ -7,37 +7,23 @@ div(class="container-LoginRegister ed-grid")
 			button(class="select-LR select-r" id="btnRegister") Registro
 div(class="container-formulario ed-grid")
 	setion(class="container-top")
-		form(class="form-login" action="")
+		form(name="LoginForm" class="form-login" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false")
 			div(class="ed-container form-grop-login")
+				div(class="separador")
+					label(for="username") Usuario
+					br
+					input(type="text" name="username" required placeholder="Escribe tu usuario")
+				div(class="separador")
+					label(for="password") Contraseña
+					br
+					input(type="password" name="password" required  placeholder="*** *** ***")
+				div(class="text-center mt-2")
+					small(name="msj_error_lg" class="text-danger")
 				div
-					p Usuario
-					input(type="text" placeholder="Escribe tu usuario")
-				div
-					p Contraseña
-					input(type="text" placeholder="*** *** ***")
-				div
-					button(class="btn-summitLogin" type="submit") Ingresar
-		form(class="form-register" action="") 
-			div(class="ed-container form-grop-register")
-				div(class="col-1")
-					div
-						p Nombre
-						input(type="text" placeholder="Nombre")
-					div
-						p Telefono
-						input(type="text" placeholder="55 555 555")
-					div
-						p Contraseña
-						input(type="password" placeholder="*** *** ***")
-					div
-				div(class="col-2")
-					div
-						p Usuario
-						input(type="text" placeholder="Elige tu nickname")
-					div
-						p Correo
-						input(type="email" placeholder="example@gmail.com")
-					div
-						p Confirmar Contraseña
-						input(type="password" placeholder="*** *** ***")
-			button(class="btn-summitRegister" type="submit") Registrate
+					button(class="btn-summitLogin"  type="submit" name="btn-login")
+						span(name="msj_loading" id="id-login-loading")
+						span(name="msj_login") Ingresar
+			input(type="hidden" name="BackEndUrl" value="https://apuestas.sport507.com.pa")
+		<script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
+		div(class="ed-container form-register")
+			iframe(style="width: 100%; height: 70vh;" src="https://apuestas.apuestamx.com/sign-up", frameborder="0") 

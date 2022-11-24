@@ -1,0 +1,8 @@
+mixin pushImg(alt, img)
+	div(class=" container-cardApostar")
+		img(src=img, alt=al)
+		button APOSTAR
+
+-for(var i =0; i< partido_home.length; i++)
+	-var partidohome = partido_home[i];
+	+pushImg(partidohome.alt, partidohome.img)
