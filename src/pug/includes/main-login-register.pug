@@ -5,6 +5,8 @@ div(class="container-LoginRegister ed-grid")
 		div(class="ed-container container-LR")
 			button(class="select-LR select-l" id="btnLogin") Iniciar Sesion
 			button(class="select-LR select-r" id="btnRegister") Registro
+
+			
 div(class="container-formulario ed-grid")
 	setion(class="container-top")
 		form(name="LoginForm" class="form-login" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false")
@@ -25,7 +27,7 @@ div(class="container-formulario ed-grid")
 						span(name="msj_login") Ingresar
 				br
 				a(href="https://apuestas.apuestamx.com/Inicio/restablecer-contra") RecuperarContraseña
-			input(type="hidden" name="BackEndUrl" value="https://apuestas.sport507.com.pa")
-		<script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
+				input(type="hidden" name="BackEndUrl" value="https://apuestas.apuestamx.com")
+		script(src="https://images.betimages.com/Betslip/js/quick.login.min.js")
 		div(class="ed-container form-register")
-			iframe(style="width: 100%; height: 70vh;" src="https://apuestas.apuestamx.com/sign-up", frameborder="0") 
+			iframe(style="width: 100%; height: 70vh;" src="https://apuestas.apuestamx.com/registro", frameborder="0") 

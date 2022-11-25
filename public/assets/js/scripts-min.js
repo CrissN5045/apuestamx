@@ -5,7 +5,8 @@ var _topNav = require('./modules/topNav');
 
 var _loginRegister = require('./modules/login-register');
 
-// import {mdInner} from './modules/mdInner';
+var _tabs = require('./modules/tabs');
+
 (function () {
 	(0, _topNav.topNav)();
 
@@ -13,10 +14,12 @@ var _loginRegister = require('./modules/login-register');
 		(0, _loginRegister.global_register_login)();
 	} else if (document.body.classList.contains('Register|Login')) {
 		(0, _loginRegister.global_register_login)();
+	} else if (document.body.classList.contains('Carreras')) {
+		(0, _tabs.tabs)();
 	}
-})();
+})(); // import {mdInner} from './modules/mdInner';
 
-},{"./modules/login-register":2,"./modules/topNav":3}],2:[function(require,module,exports){
+},{"./modules/login-register":2,"./modules/tabs":3,"./modules/topNav":4}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62,6 +65,41 @@ var global_register_login = exports.global_register_login = function global_regi
 };
 
 },{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var tabs = exports.tabs = function tabs() {
+	var hideTable = function hideTable() {
+		var tables = document.querySelectorAll('.lorem');
+		for (var index = 0; index < tables.length; index++) {
+			tables[index].style.display = 'none';
+		}
+	};
+	var d = document,
+	    tabs = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container__tab')),
+	    tableTap = d.querySelectorAll('.lorem');
+
+	console.log(tableTap);
+
+	var _loop = function _loop(index) {
+		tabs[index].addEventListener('click', function (e) {
+			var i = tabs.indexOf(e.target);
+			var x = tabs[index];
+			hideTable();
+			var table = document.querySelector('.' + x.id);
+			console.log(table);
+			table.style.display = 'block';
+		});
+	};
+
+	for (var index = 0; index < tabs.length; index++) {
+		_loop(index);
+	}
+};
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

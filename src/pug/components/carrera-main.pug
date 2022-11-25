@@ -3,3 +3,25 @@ div(class="main-casino")
 		div(class="container-cont")
 			div(class="text-cont")
 				include:markdown-it(html) ../md/carreras.md
+div(class='ed-container')
+	div(class='ed-item')
+		div(class='tabs-container')
+			ul(class='tabs-container__tabs' id='tabs')
+				li(class='tabs-container__tab is-active' id="tableOne") Pistas Principales
+				li(class='tabs-container__tab' id="tableTwo") MINOR TRACKS
+				li(class='tabs-container__tab' id="tableThree") OTHER TRACKS
+				li(class='tabs-container__tab' id="tableFour") Galgos
+				li(class='tabs-container__tab' id="tableFive") Internacional
+			
+			div(class='tabs-container__panels')
+				div(class='tabs-container__panel is-active')
+				
+					include ../config/utilis/tables
+				div(class='tabs-container__panel')
+					
+				div(class='tabs-container__panel')
+				
+				div(class='tabs-container__panel')
+					
+				div(class='tabs-container__panel')
+					

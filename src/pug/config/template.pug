@@ -7,8 +7,12 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 	head
 		include utilis/metatags
 		include utilis/metaTagsPWA
+		link(rel="icon" type="image/jpg" href="assets/img/icono-logo-192.png")
 		script(src="https://kit.fontawesome.com/20f3c29ee8.js" crossorigin="anonymous")
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css')
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 		link(rel="stylesheet" href="assets/css/styles.css")
 		title= currentPage.slice(0,1).toUpperCase() + currentPage.slice(1) + " | " + siteName
 	body(class=currentPage, itemscope itemtype="http://schema.org/WebPage")

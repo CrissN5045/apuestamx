@@ -1,7 +1,7 @@
 mixin pushImg(alt, img)
 	div(class=" container-cardApostar")
 		img(src=img, alt=al)
-		button APOSTAR
+		a(href="login.html"): button APOSTAR
 
 -for(var i =0; i< partido_home.length; i++)
 	-var partidohome = partido_home[i];
