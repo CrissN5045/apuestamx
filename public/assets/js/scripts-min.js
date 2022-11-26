@@ -7,19 +7,90 @@ var _loginRegister = require('./modules/login-register');
 
 var _tabs = require('./modules/tabs');
 
+var _date_UpdateImg = require('./modules/date_UpdateImg');
+
+// import {mdInner} from './modules/mdInner';
 (function () {
 	(0, _topNav.topNav)();
 
 	if (document.body.classList.contains('Login|Register')) {
 		(0, _loginRegister.global_register_login)();
+	} else if (document.body.classList.contains('Home')) {
+		(0, _date_UpdateImg.date_UpdateImg)();
 	} else if (document.body.classList.contains('Register|Login')) {
 		(0, _loginRegister.global_register_login)();
 	} else if (document.body.classList.contains('Carreras')) {
 		(0, _tabs.tabs)();
 	}
-})(); // import {mdInner} from './modules/mdInner';
+})();
 
-},{"./modules/login-register":2,"./modules/tabs":3,"./modules/topNav":4}],2:[function(require,module,exports){
+},{"./modules/date_UpdateImg":2,"./modules/login-register":3,"./modules/tabs":4,"./modules/topNav":5}],2:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var date_UpdateImg = exports.date_UpdateImg = function date_UpdateImg() {
+	var myFunction = function myFunction() {
+		var fecha = new Date();
+		var horaEstablecida = "17:00";
+
+		var fecha25Nov = new Date("Fri, Nov 25, 2022");
+		var fecha26Nov = new Date("Sat, Nov 26, 2022");
+		var fecha27Nov = new Date("Sun, Nov 27, 2022");
+		var day25 = document.querySelector(".partidosNov25");
+		var day26 = document.querySelector(".partidosNov26");
+		var day27 = document.querySelector(".partidosNov27");
+
+		var minutos = "";
+		var hora = "";
+		var horasMinutos = "";
+
+		if (fecha.getHours() < 10) {
+			hora = "0" + fecha.getHours();
+		} else {
+			hora = "" + fecha.getHours();
+		}
+		if (fecha.getMinutes() < 10) {
+			minutos = "0" + fecha.getMinutes();
+		} else {
+			minutos = "" + fecha.getMinutes();
+		}
+		horasMinutos = hora + ":" + minutos;
+
+		console.log(horasMinutos + " " + fecha.toDateString() + fecha26Nov.toDateString());
+
+		if (fecha.toDateString() == fecha25Nov.toDateString() && horasMinutos >= horaEstablecida) {
+			nonePartidos();
+			day25.style.display = "grid";
+		}
+
+		if (fecha.toDateString() == fecha26Nov.toDateString() && horasMinutos >= horaEstablecida) {
+			nonePartidos();
+			day26.style.display = "grid";
+		}
+
+		if (fecha.toDateString() == fecha27Nov.toDateString() && horasMinutos >= horaEstablecida) {
+			nonePartidos();
+			day27.style.display = "grid";
+		}
+	};
+	myFunction();
+
+	function nonePartidos() {
+		var day25 = document.querySelector(".partidosNov25");
+		var day26 = document.querySelector(".partidosNov26");
+		var day27 = document.querySelector(".partidosNov27");
+		day25.style.display = "none";
+		day26.style.display = "none";
+		day27.style.display = "none";
+	}
+
+	function generateContainer2(data, item) {}
+	function generateContainer3(data, item) {}
+};
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -64,7 +135,7 @@ var global_register_login = exports.global_register_login = function global_regi
 	myFuction();
 };
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -99,7 +170,7 @@ var tabs = exports.tabs = function tabs() {
 	}
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

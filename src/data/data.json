@@ -19,21 +19,78 @@
 	    ],
 		"partido_home":[
 			{
-				"img": "assets/img/partidos/nov-25-gales-vs-iran-fifa.png",
-				"alt": "futbol-caja-soccer"
+				"partidos":[
+					{
+						"img": "assets/img/partidos/nov-25-gales-vs-iran-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov25"
+					},
+					{
+						"img": "assets/img/partidos/nov-25-holanda-vs-ecuador-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov25"
+					},
+					{
+						"img": "assets/img/partidos/nov-25-inglaterra-vs-usa-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov25"
+					},
+					{
+						"img": "assets/img/partidos/nov-25-qatar-vs-senegal-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov25"
+					}
+					]
 			},
 			{
-				"img": "assets/img/partidos/nov-25-holanda-vs-ecuador-fifa.png",
-				"alt": "futbol-caja-soccer"
+				"partidos":[
+					{
+						"img": "assets/img/partidos/nov-26-argentina-vs-mexico-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov26"
+					},
+					{
+						"img": "assets/img/partidos/nov-26-francia-dinamarca-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov26"
+					},
+					{
+						"img": "assets/img/partidos/nov-26-polonia-vs-arabia-saudita-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov26"
+					},
+					{
+						"img": "assets/img/partidos/nov-26-tunez-vs-australia-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov26"
+					}
+					]
 			},
 			{
-				"img": "assets/img/partidos/nov-25-inglaterra-vs-usa-fifa.png",
-				"alt": "futbol-caja-soccer"
-			},
-			{
-				"img": "assets/img/partidos/nov-25-qatar-vs-senegal-fifa.png",
-				"alt": "futbol-caja-soccer"
+				"partidos":[
+					{
+						"img": "assets/img/partidos/nov-27-belgica-vs-morocco-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov27"
+					},
+					{
+						"img": "assets/img/partidos/nov-27-croacia-vs-canada-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov27"
+					},
+					{
+						"img": "assets/img/partidos/nov-27-espana-vs-alemania-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov27"
+					},
+					{
+						"img": "assets/img/partidos/nov-27-japon-vs-costarica-fifa.png",
+						"alt": "futbol-caja-soccer",
+						"idClass": "partidosNov27"
+					}
+					]
 			}
+			
 		],
 		"products_line1":[
 			{

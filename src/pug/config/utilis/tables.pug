@@ -21,7 +21,6 @@ mixin tablePistaPrincipal()
 					tbody
 							+TpushTD(i)
 mixin TpushTD(indice)
-	-console.log(indice)
 		-for(var j = 1; j < table_PistasPrincipales[indice].table.length ; j++)
 			-var pista_t= table_PistasPrincipales[indice].table[j].pista 
 			-var zona_t = table_PistasPrincipales[indice].table[j].zonaHoraria

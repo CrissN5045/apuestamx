@@ -1,8 +1,18 @@
-mixin pushImg(alt, img)
-	div(class=" container-cardApostar")
-		img(src=img, alt=al)
-		a(href="login.html"): button APOSTAR
+mixin pushPartido()
+		-for(var i=0; i < partido_home.length; i++)
 
--for(var i =0; i< partido_home.length; i++)
-	-var partidohome = partido_home[i];
-	+pushImg(partidohome.alt, partidohome.img)
+			+pushimg(i)
+mixin pushimg(i)
+	-var idClass = partido_home[i].partidos[i].idClass;
+	div(class="container-cont ed-grid m-grid-2 s-grid-1" class=idClass)
+		-for(var j = 0; j < partido_home[i].partidos.length; j++)
+			-var partidoAlt = partido_home[i].partidos[j].alt;
+			-var partidoImg = partido_home[i].partidos[j].img;
+			div(class="container-cardApostar" class=id)
+				img(src=partidoImg, alt=partidoAlt)
+				a(href="login.html"): button APOSTAR
+
++pushPartido()
+
+
+
